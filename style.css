@@ -1,0 +1,93 @@
+#messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #f1f1f1;
+  }
+body{
+  background-image: url("images/bg.jpeg");
+}
+h1{
+  background-color: #f1f1f1;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-style: italic;
+}
+h1:hover{
+  color: rgb(255, 0, 0);
+  font-size: large;
+  font-style: italic;
+}
+  .message {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    max-width: 60%;
+    word-wrap: break-word;
+    border-radius: 10px;
+  }
+  
+  .user-message {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background-color: #fff;
+    align-self: flex-start;
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    margin-left: 5px;
+    color: #666;
+  }
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+#messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  
