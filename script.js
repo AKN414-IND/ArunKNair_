@@ -1,4 +1,3 @@
-
 const messagesEl = document.querySelector("#messages");
 const inputEl = document.querySelector("#input");
 const sendBtnEl = document.querySelector("#send-btn");
