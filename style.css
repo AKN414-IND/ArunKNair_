@@ -1,3 +1,42 @@
+#chat-header #a {
+  display: block;
+  color: #810101;
+  
+}
+
+#chat-header #b {
+  display: none;
+  color: #f1f1f1;
+
+}
+.ad{
+  width: 89.1%;
+}
+h1{
+  padding: 10px;
+  margin: 5px;
+}
+.da{
+  margin-right: auto;
+  width: 9.8%;
+  border-radius: 50px;
+  background-color: #000000;
+  color:rgb(255, 255, 255);
+  
+}
+#chat-header:hover #a {
+  display: none;
+}
+
+#chat-header:hover #b {
+  display: block;
+  color: #f1f1f1;
+}
+#chat-header {
+  cursor: zoom-in;
+}
+
+
 #messages {
     display: flex;
     flex-direction: column;
@@ -7,21 +46,24 @@
     overflow-y: scroll;
     background-color: #f1f1f1;
   }
+
 body{
   background-image: url("images/bg.jpeg");
 }
+
 h1{
-  background-color: #f1f1f1;
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  font-size: large;
+  font-style: italic;
+}
+
+h1:hover{
   color: rgb(255, 255, 255);
   font-size: large;
   font-style: italic;
 }
-h1:hover{
-  color: rgb(255, 0, 0);
-  font-size: large;
-  font-style: italic;
-}
-  .message {
+.message {
     display: inline-block;
     padding: 10px;
     margin: 5px;
@@ -30,17 +72,17 @@ h1:hover{
     border-radius: 10px;
   }
   
-  .user-message {
+.user-message {
     background-color: #dcf8c6;
     align-self: flex-end;
   }
   
-  .bot-message {
+.bot-message {
     background-color: #fff;
     align-self: flex-start;
   }
   
-  .timestamp {
+.timestamp {
     font-size: 0.8em;
     margin-left: 5px;
     color: #666;
@@ -90,4 +132,5 @@ h1:hover{
 	}
 }
 
+  
   
